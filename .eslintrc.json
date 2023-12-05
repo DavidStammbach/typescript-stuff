@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "@axah/eslint-config"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "import/no-default-export": "error",
+    "func-style": ["error", "expression"],
+    "prefer-destructuring": "error",
+    "curly": ["error", "all"],
+    "no-extra-semi": "error",
+    "semi": ["error", "never"],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": "multiline-const", "next": "const" },
+      { "blankLine": "always", "prev": "multiline-const", "next": "multiline-const" },
+      { "blankLine": "always", "prev": "multiline-block-like", "next": "export" },
+      { "blankLine": "always", "prev": "multiline-block-like", "next": "multiline-block-like" },
+      { "blankLine": "always", "prev": "const", "next": "export" },
+      { "blankLine": "always", "prev": "export", "next": "const" },
+      { "blankLine": "always", "prev": "export", "next": "export" }
+    ]
+  }
+}

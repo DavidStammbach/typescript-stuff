@@ -1,0 +1,29 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "node-dev --respawn src/index.ts | pino-pretty -c -t",
+    "game": "node-dev --respawn src/other/simple-game.ts | pino-pretty -c -t",
+    "solve": "node-dev --respawn src/how-would-you-solve-this.ts | pino-pretty -c -t",
+    "spread": "node-dev --respawn src/conditional-object-spread.ts | pino-pretty -c -t"
+  },
+  "author": "David Stammbach",
+  "license": "ISC",
+  "dependencies": {
+    "@axah/eslint-config": "^1.2.2",
+    "readline": "^1.3.0",
+    "pino": "^7.10.0",
+    "pino-pretty": "^7.6.1",
+    "eslint": "^8.9.0",
+    "eslint-plugin-import": "^2.27.5",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5",
+    "ts-node": "^10.7.0",
+    "node-dev": "^7.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.5"
+  }
+}
